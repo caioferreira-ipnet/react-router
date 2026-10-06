@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "name": "Bola",
+      "price": "19.00",
+      "id": "1"
+    },
+    {
+      "name": "Boné",
+      "price": "10.00",
+      "id": "2"
+    },
+    {
+      "name": "Bike",
+      "price": "190.00",
+      "id": "3"
+    }
+  ]
+}
