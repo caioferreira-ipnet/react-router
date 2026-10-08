@@ -1,7 +1,7 @@
 import React from "react";
-
+import style from "../styles/About.module.css";
 const About = () => {
-  return <div>About</div>;
+  return <div className={style.container}>About</div>;
 };
 
 export default About;

@@ -13,5 +13,12 @@
 .nav a:hover {
   font-weight: bold;
   cursor: pointer;
+}
+.nav .active {
+  background-color: #000;
   color: #ccc;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.3s;
 }
