@@ -1,10 +1,11 @@
 //React-Router
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 //Pages
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Products from "./pages/Products.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
+import Search from "./pages/Search.jsx";
 //Error pages
 import NotFoundPage from "./pages/errorPages/NotFoundPage.jsx";
 //Components
@@ -27,6 +28,8 @@ function App() {
           <Route path="/products/:id" element={<Products />}>
             <Route path="details" element={<ProductDetails />}></Route>
           </Route>
+          <Route path="/search" element={<Search />}></Route>
+          <Route path="/company" element={<Navigate to="/about" />}></Route>
           <Route path="/*" element={<NotFoundPage />}></Route>
         </Routes>
       </BrowserRouter>
